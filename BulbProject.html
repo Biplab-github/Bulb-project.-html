@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bulb on/off </title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style type="text/css">
+ 
+  #click1{
+    width:80px;
+    height:37px;
+    margin-left:21%;
+    margin-right:15%;
+    background-image:linear-gradient(45deg, rgb(238, 130, 238),rgba(15, 255, 255, 0.5));
+    border-radius:15px;
+    
+  }
+  
+  #click2{
+  width:80px;
+  height:37px;
+  background-image:linear-gradient(45deg, rgb(238, 130, 238),rgba(15, 255, 255, 0.5));
+  border-radius:15px;
+  margin-top:25%;
+  }
+  
+  #onImg{
+   width:390px;
+   height:420px;
+   margin:auto;
+   display:flex;
+  color:blue;
+  background-size:2px;
+  border-radius:50%;
+  }
+ 
+ </style>
+</head>
+<body>
+  
+   <img src="https://drive.google.com/uc?export=view&id=1FiHV15lhF1q-wjdw9lJe7zfQ9hbj5zEe" id="onImg">
+   <button id="click1" onclick="change(0)" >ON</button>
+   <button id="click2" onclick="change(1)" >OFF</button>
+   
+ <script type="text/javascript">
+   
+   function change(show){
+   if(show == 0){
+   document.getElementById("onImg").src ="https://drive.google.com/uc?export=view&id=1FiHV15lhF1q-wjdw9lJe7zfQ9hbj5zEe";
+   }
+   else{
+    document.getElementById("onImg").src= "https://drive.google.com/uc?export=view&id=1GDuz-7nomdJ--8UW9kXtJHioaWgxm6Zy";
+   }
+   
+    }
+ </script>
+</body>
+</html>
